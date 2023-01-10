@@ -33,21 +33,36 @@ export default function Home() {
           Unit 5
         </button>
         </Link>
-        <Link href="/unit6/main">
+        {/* <Link href="/unit6/main"> */}
         <button className=" box6 "disabled>
-          Unit 6
+        <div className='tooltip'>
+            Unit 6
+            <span className="tooltiptext">
+              WIP
+            </span>
+            </div>
         </button>
-        </Link>
-        <Link href="/unit7/main">
+        {/* </Link> */}
+        {/* <Link href="/unit7/main"> */}
         <button className=" box7 " disabled>
-          Unit 7
+        <div className='tooltip'>
+            Unit 7
+            <span className="tooltiptext">
+              WIP
+            </span>
+            </div>
           </button>
-          </Link>
-        <Link href="/unit8/main">
+          {/* </Link> */}
+        {/* <Link href="/unit8/main"> */}
         <button className=" box8 " disabled>
+            <div className='tooltip'>
             Unit 8
+            <span className="tooltiptext">
+              WIP
+            </span>
+            </div>
         </button>
-        </Link>
+        {/* </Link> */}
       </div>
       <button className="flex sm:mt-10 m-3 h-auto w-fit p-2 rounded-3xl text-sm border border-gray-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
         <p className=" px-2">Built By Rahul R.</p>
