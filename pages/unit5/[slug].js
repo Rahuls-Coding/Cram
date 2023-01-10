@@ -14,7 +14,7 @@ export default function Content({ mdxSource, frontMatter }) {
 }
 
 export async function getStaticPaths() {
-  const content = await getFiles("unit4");
+  const content = await getFiles("unit5");
 
   return {
     paths: content.map((p) => ({
