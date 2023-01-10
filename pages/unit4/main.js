@@ -6,7 +6,9 @@ import { getAllFilesFrontMatter } from "../../lib/mdx";
 export default function Main({ content }) {
   const [searchValue, setSearchValue] = useState("");
 
-  const filteredContent = content.filter((frontMatter) =>
+  const filteredContent = content
+    .sort()
+    .filter((frontMatter) =>
     frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
   );
 

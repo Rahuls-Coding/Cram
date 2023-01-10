@@ -264,6 +264,7 @@ a {
 }
 .back-button {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .head {
   display: flex; 

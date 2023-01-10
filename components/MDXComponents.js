@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import Block from "./Block";
 import Table from "./Table";
+import BulletPoints from "./BulletPoints";
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -45,6 +46,7 @@ const MDXComponents = {
   //   YouTube
   Block,
   Table,
+  BulletPoints,
 };
 
 export default MDXComponents;
