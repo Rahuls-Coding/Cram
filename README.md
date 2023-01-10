@@ -1,35 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AP Calculus AB Review 
 
-## Getting Started
+This website is a collection of all my (simplier) notes and resources for AP Calculus AB. It is a work in progress, and I will be adding more content as I go.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- [Next.js](https://nextjs.org/)
+- [Vercel](https://vercel.com)
+- [MDX](https://www.mdxjs.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Repo Overview
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# apcal-review
+- `- `pages/unit[]/` - Contains 2 files `[slug].js` and `main.js`. The slug file is to render the static mdx file using [mdx-next-remote](https://github.com/hashicorp/next-mdx-remote) and main file is to display the collection of notes and files in that unit
+- `layout/content` - Creates the layout of the how the mdx file is rendered
+- `components/` - Contains all the components used in the website, most created for the custom components that's being used in the mdx file itself
+- `content/*` - Contains all the mdx files for the notes and resources, spereated into units for efficiency
+- `lib/mdx` - Gets static mdx files from a location (in this case locally), infuses the MDXComponents and bundles it into frontMatter
+- `pages/*` - All other static pages.
